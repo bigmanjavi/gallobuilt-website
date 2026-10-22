@@ -9,3 +9,10 @@
 .quote button:disabled{opacity:.65;cursor:wait}
 @media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service:nth-child(2){border-right:0}.service:nth-child(-n+2){border-bottom:1px solid #cfcac0}}
 @media(max-width:680px){.service-grid{grid-template-columns:1fr}.service{border-right:0!important;border-bottom:1px solid #cfcac0}.service:nth-child(2){border-bottom:1px solid #cfcac0}}
+
+/* v3 refinements */
+.brand-mark{display:flex;align-items:center;justify-content:center;width:49px;flex:none}
+.brand-mark img{width:46px;height:46px;object-fit:contain}
+.hero-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:720px;gap:12px 22px}
+.hero-points span{display:block}
+@media(max-width:680px){.hero-points{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 10px;font-size:11px}.brand-mark{width:40px}.brand-mark img{width:39px;height:39px}}

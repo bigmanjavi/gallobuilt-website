@@ -1,29 +1,18 @@
-# GalloBuilt website update — October 2026
+# GalloBuilt Website v3 — upload instructions
 
-## Update the live GitHub Pages site
+Upload ALL files in this folder to the ROOT of your existing GitHub repository `bigmanjavi/gallobuilt-website` (same level as index.html). Replace existing files with matching names. Do not upload the folder itself or the ZIP. Do not change Namecheap DNS settings.
 
-1. Open https://github.com/bigmanjavi/gallobuilt-website in Safari and select **Add file → Upload files** (desktop website view if needed).
-2. Extract the ZIP first. Upload **the contents** of the `gallobuilt-site` folder into the repository root, **not** the folder or ZIP itself.
-3. Replace the existing `index.html`, `styles.css`, and `script.js` when GitHub prompts. Add `social-preview.jpg` and `README-UPDATE.md`. Keep `CNAME` and `favicon.svg` in place.
-4. Commit changes to `main`. GitHub Pages should deploy automatically. You do not need to change Namecheap DNS.
+## Changes
+- Rooster icon added to both brand marks.
+- Improvements service icon changed to a hammer.
+- Removed arrow/phone symbol from top-right Call Now button.
+- Six hero benefit points in 3 columns x 2 rows.
+- Expanded hero introduction to mention trash removal.
+- Social preview image uses the user-provided rooster logo with new filename `gallobuilt-share-v3.jpg` to avoid stale cached URLs.
+- Quote form changed from JavaScript AJAX to ordinary secure FormSubmit POST so it cannot get stuck showing Sending. It does leave the page for FormSubmit's confirmation; it does not open a mail app.
 
-## IMPORTANT: Activate direct quote submissions
+## Quote form activation — REQUIRED
+FormSubmit requires an activation/verification email to `contact@gallobuilt.com`. Open the message and activate it. Then submit a second test and verify receipt. Until then, submissions may not be delivered. If a direct in-page success message is essential, create a Formspree account and supply the form endpoint for a future integration.
 
-The quote form now submits via FormSubmit (https://formsubmit.co/) without opening a mail app. On the **first form submission**, FormSubmit emails an activation/confirmation message to **contact@gallobuilt.com**. Open that mailbox, find the FormSubmit activation email, and click its confirmation link. Until activation is completed, **do not assume quote requests are being delivered**. Test the form yourself after activation and verify receipt. Check spam/junk folders if the confirmation message doesn't arrive.
-
-This is a third-party free form service; submissions are sent to FormSubmit for processing. Service limits, anti-spam checks, and delivery are controlled by that provider. Do not enter sensitive personal information in the form.
-
-## Social sharing preview
-
-`social-preview.jpg` is a 1200×630 image made from the GalloBuilt logo you supplied. The page includes Open Graph and Twitter preview tags referencing https://www.gallobuilt.com/social-preview.jpg. Messaging and social apps cache previews; they may take time to update. Share a new message after deployment to test.
-
-## Other changes
-
-- Removed all Google Maps/directions links; Google review link stays.
-- Unified SVG icons for Repairs, Housework, Improvements, and new Trash Removal service.
-- Removed icons from Our Work placeholders.
-- Form submits directly from the website via AJAX; status messages and error fallback included.
-
-## Business contact
-
-Phone: (832) 221-7042; email: contact@gallobuilt.com.
+## Share preview
+After GitHub finishes deploying, open `https://www.gallobuilt.com/gallobuilt-share-v3.jpg` directly to confirm it loads. Messaging apps cache previews; try a fresh conversation or allow time for recrawling. The site can request a preview image but cannot force every app to display it.
